@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600&display=swap");
+$primary-color: #343a40;
+$body-bg: #ebeff2;
+$text-hover: #71b6f9;
+$icon-color: #6c757d;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Karla", sans-serif;
+  background: $body-bg;
+  transition: all 0.5s ease-in;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 10px 0;
+  color: $primary-color;
+}
+h4 {
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+p {
+  font-family: "Karla", sans-serif;
+}
+.container {
+  max-width: 100%;
+  margin: auto;
+}
+
+ul li {
+  list-style: none;
+  list-style-type: none;
+}
+
+.icon {
+  cursor: pointer;
+  color: $icon-color;
+  font-weight: 400;
+  &:hover {
+    color: $text-hover;
+    transition: all 0.3s ease;
+  }
+}
+
+::placeholder {
+  font-family: "Karla", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #f5f5f5;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #888;
+}
